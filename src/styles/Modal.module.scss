@@ -1,0 +1,48 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 90vw;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.modalClose {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  background-color: rgb(231, 104, 104);
+  border: none;
+  border-radius:6px;
+  font-size: 20px;
+  color: azure;
+  cursor: pointer;
+}
+
+.header{
+  color: black;
+}
+
+.body{
+  color: red;
+}
+
+.footer{
+  color: grey;
+}

@@ -1,0 +1,21 @@
+.colorGroup {
+  display: flex;
+  flex-direction: column
+}
+
+.colorOption {
+  background: rgba(0, 255, 0, 0.2);
+  padding: 4px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: background-color 0.25s ease;
+
+  &.red:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+
+  &.blue:hover {
+    background-color: rgba(0, 0, 255, 0.3);
+  }
+}
