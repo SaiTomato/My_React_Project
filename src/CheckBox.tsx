@@ -25,7 +25,7 @@ function CheckBox() {
   return (
     <>
       {options.map(item=>(
-        <label>
+        <label key={item}>
           <input type="checkbox" value={item} checked={hobbies.includes(item)} onChange={handleChange} />{item}
         </label>
       ))}
