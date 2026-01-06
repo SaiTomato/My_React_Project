@@ -14,6 +14,7 @@ import MyInput from './MyInput'
 import WinSize from './WinSize';
 import Counting from './Counting';
 import RequestToBE from './DataFromBE';
+import TodoList from './TodoList';
 
 export function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +30,7 @@ export function App() {
         <Link to="/test">Test</Link>
       </nav>
 
+      <TodoList/>
       <div>
         <a href="https://vite.dev" target="_blank">
           <span className={styles.logoHitbox}>
