@@ -13,6 +13,7 @@ import { AnimatePresence } from 'framer-motion';
 import MyInput from './MyInput'
 import WinSize from './WinSize';
 import Counting from './Counting';
+import RequestToBE from './DataFromBE';
 
 export function App() {
   const [count, setCount] = useState(0)
@@ -23,8 +24,9 @@ export function App() {
   return (
     <>
       <nav>
-        <Link to="/">Home</Link> |{' '}
-        <Link to={`/color/${count}`}>About</Link>
+        <Link to="/">First</Link> |{' '}
+        <Link to={`/color/${count}`}>Second</Link> |{' '}
+        <Link to="/test">Test</Link>
       </nav>
 
       <div>
@@ -59,6 +61,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<CheckBox/>} />
         <Route path="/color/:cnt" element={<Radio/>} />
+        <Route path="/test" element={<RequestToBE/>} />
       </Routes>
 
       <Button $primary onClick={() => setOpen(true)}>Open</Button>

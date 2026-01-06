@@ -9,7 +9,10 @@ export default defineConfig({
   //     '@': '/src',
   //   },
   // },
-  // server: {
-  //   port: 3000,
-  // },
+  server: {
+    proxy:{
+      '/api':'http://localhost:3000',
+    },
+    // port: 3000,
+  },
 })
